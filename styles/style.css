@@ -9,7 +9,6 @@ body {
     width: 100%;
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
-    background-color: aqua;
 }
 .icon {
     margin-right: 20px;
@@ -400,6 +399,19 @@ footer {
         color: #ffffff;
         font-size: 48px;
         padding-top: 40px;
+        background: linear-gradient(-90deg, #9100f8, #fb09b4, #f7e93f);
+        background-size: 150px;
+        background-clip: text;
+        color: transparent;
+        animation: move 7s linear infinite;
+    }
+    @keyframes move {
+        0% {
+            background-position: 0%;
+        }
+        100% {
+            background-position: 300%;
+        }
     }
 
     .hero-cont p {
@@ -544,6 +556,12 @@ footer {
         height: 400px;
     }
 
+    .featured-card iframe {
+        width: 380px;
+        height: 225px;
+        border-radius: 20px 20px 0px 0px;
+    }
+
     /* Meet the Host */
 
     .meet-sec {
@@ -560,7 +578,6 @@ footer {
     .host {
         display: flex;
         text-align: center;
-        flex-wrap: wrap;
         gap: 24px;
     }
 
@@ -583,7 +600,7 @@ footer {
 
     /* footer */
 
-     footer {
+    footer {
         height: 412px;
     }
 
