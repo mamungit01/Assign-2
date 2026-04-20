@@ -157,7 +157,7 @@ nav {
 }
 
 .choose-card p {
-    color: #cccaca;
+    color: #d3cece;
     padding-left: 29px;
     padding-bottom: 25px;
 }
@@ -261,7 +261,7 @@ nav {
     padding-top: 16px;
     font-size: 16px;
     line-height: 24px;
-    color: #cccaca;
+    color: #d3cece;
 }
 
 .about-host a img {
@@ -269,6 +269,59 @@ nav {
     border: 1px solid #351165;
     border-radius: 100px;
     padding: 10px;
+}
+
+/* footer */
+
+footer {
+    background-image: url("/images/footer-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 248px;
+}
+
+.foot {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.foot-cont h1 {
+    padding-top: 40px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.gradient {
+    background: linear-gradient(#9100f8, #fb09b4, #f7e93f);
+    background-clip: text;
+    color: transparent;
+}
+.foot-link {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 16px;
+    gap: 16px;
+}
+
+.foot-link a {
+    text-decoration: none;
+    color: #d3cece;
+    padding-top: 8px;
+    margin-right: 20px;
+}
+
+.foot-link a img {
+    margin-right: 8px;
+}
+
+.copy-rifght {
+    padding-top: 24px;
+    color: #999797;
 }
 
 @media (width > 440px) {
@@ -526,5 +579,31 @@ nav {
     .about-host h3 {
         font-size: 32px;
         font-weight: bold;
+    }
+
+    /* footer */
+
+     footer {
+        height: 412px;
+    }
+
+    .foot-cont h1 {
+        padding-top: 110px;
+        font-size: 4em;
+        font-weight: 900px;
+        color: #ffffff;
+    }
+
+    .foot-link {
+        display: flex;
+        gap: 30px;
+    }
+
+    .foot-link a {
+        margin-right: 10px;
+    }
+
+    .copy-rifght {
+        padding-top: 60px;
     }
 }
