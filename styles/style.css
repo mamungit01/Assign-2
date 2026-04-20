@@ -11,6 +11,9 @@ body {
     font-optical-sizing: auto;
     background-color: aqua;
 }
+.icon {
+    margin-right: 20px;
+}
 
 /* navigation */
 
@@ -59,6 +62,57 @@ nav {
     display: none;
 }
 
+/* About the Podcast */
+
+.about {
+    margin-top: -38px;
+    width: 100%;
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #1a0b2e;
+}
+
+.about h1 {
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.about-cont p {
+    color: #d3cece;
+    font-size: 16px;
+    line-height: 20px;
+    padding-top: 16px;
+}
+
+/* card */
+
+.card-section {
+    width: 100%;
+    padding: 40px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    text-align: center;
+    background-color: #1a0b2e;
+}
+
+.card {
+    margin: 0 auto;
+}
+
+.card-section .card h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #00ff88;
+    padding-bottom: 16px;
+}
+
+.card-section .card p {
+    font-size: 16px;
+    color: #d3cece;
+}
+
 @media (width > 440px) {
     nav {
         padding: 22px 200px;
@@ -87,7 +141,7 @@ nav {
 
     .hero {
         width: 100%;
-        min-height: 100vh;
+        min-height: 760px;
         background: url("/images/hero-bg.png");
         background-position: top center;
         background-repeat: no-repeat;
@@ -144,11 +198,15 @@ nav {
     }
 
     .hero-btn {
+        display: flex;
+        align-items: center;
         padding-top: 24px;
     }
 
     .spotify {
-        padding: 12px 20px 12px 48px;
+        padding: 12px 20px 12px 20px;
+        display: flex;
+        align-items: center;
         font-size: 16px;
         font-weight: 500;
         border-radius: 20px;
@@ -163,8 +221,39 @@ nav {
         font-weight: 500;
         margin-left: 8px;
         color: #00ff88;
-        padding: 12px 20px 12px 48px;
+        padding: 12px 20px 12px 20px;
+        display: flex;
+        align-items: center;
         border: 2px solid #00ff88;
         border-radius: 20px;
+    }
+
+    /*About the Podcast  */
+
+    .about {
+        padding-top: 50px;
+    }
+
+    .about h1 {
+        font-size: 48px;
+        font-weight: bold;
+    }
+
+    .about-cont p {
+        color: #d3cece;
+        font-size: 16px;
+        line-height: 50px;
+        padding-top: 16px;
+    }
+
+    /* card */
+
+    .card-section {
+        display: flex;
+    }
+
+    .card-section .card h1 {
+        font-size: 48px;
+        font-weight: 900;
     }
 }
